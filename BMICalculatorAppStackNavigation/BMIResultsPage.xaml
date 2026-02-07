@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICalculatorAppStackNavigation.BMIResultsPage"
+             Title="BMIResultsPage"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout
+        Margin="20"
+        Spacing="10">
+        <Label 
+            Text="BMI Results:" 
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            FontSize="30"/>
+        <Frame
+            x:Name="FrameResults">
+            <VerticalStackLayout
+                Spacing="10">
+                <Label
+                    x:Name="LabelBMI"
+                    Text="Your BMI:"
+                    FontSize="25"
+                    HorizontalOptions="Center"/>
+                <Label
+                    x:Name="LabelBMIValue"
+                    FontSize="20"
+                    HorizontalOptions="Center"/>
+                <Label
+                    x:Name="LabelHealthStatus"
+                    Text="Health Status:"
+                    FontSize="25"
+                    HorizontalOptions="Center"/>
+                <Label
+                    x:Name="LabelHealthStatusValue"
+                    FontSize="20"
+                    HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+
+        </Frame>
+        <HorizontalStackLayout
+            Spacing="20"
+            HorizontalOptions="Center"
+            VerticalOptions="End">
+            <Button
+                Text="Recommendations"
+                Clicked="RecommendationsButton_Clicked"/>
+            <Button
+                Text="Return Home"
+                Clicked="ReturnHomeButton_Clicked"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

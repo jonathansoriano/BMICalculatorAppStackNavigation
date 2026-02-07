@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICalculatorAppStackNavigation.HealthRecommendationsPage"
+             Title="HealthRecommendationsPage"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout
+        Margin="20"
+        Spacing="10">
+        <Label 
+            Text="Health Recommendations:"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            FontSize="30" />
+        <Label
+            x:Name="LabelRecommendationsValue"
+            FontSize="20"
+            HorizontalOptions="Start" />
+        <HorizontalStackLayout
+            Spacing="10"
+            HorizontalOptions="Center">
+            <Button
+                    Text="Back to Results"
+                    Clicked="BackToResultsButton_Clicked"/>
+            <Button
+                    Text="Return Home"
+                    Clicked="ReturnHomeButton_Clicked"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
